@@ -17,9 +17,9 @@ $ npm run start
 $ npm run generate
 
 # activate nuxt/content
-yarn add @nuxt/content
+$ yarn add @nuxt/content
     # and add nuxt.config.js
-    '@nuxt/content'
+    $ '@nuxt/content'
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
