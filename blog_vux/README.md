@@ -1,4 +1,5 @@
-# blog_nuxt
+# Nuxt Blog
+![](/images/Blog.png.png)
 
 ## Build Setup
 
