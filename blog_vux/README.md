@@ -1,5 +1,5 @@
 # Nuxt Blog
-![](/images/Blog.png.png)
+![](https://github.com/fk-pixel/MyVue.js/blob/main/blog_vux/images/Blog.png)
 
 ## Build Setup
 
