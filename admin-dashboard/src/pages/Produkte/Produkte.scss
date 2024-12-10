@@ -1,0 +1,125 @@
+@import "../../styles/app";
+.mini {
+  max-width: 50%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  /*border:  solid 0.2rem rgba(170, 113, 6, 0.726);*/
+  margin-bottom: 0.1rem;
+  margin-top: 0.1rem;
+}
+.tab-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+tr {
+  height: 50px;
+}
+
+:root {
+  --kamil: 10px;
+}
+@media (max-width: 375px) {
+  .v-data-table > .v-data-table__wrapper > table > tbody > tr > td,
+  .v-data-table > .v-data-table__wrapper > table > tbody > tr > th,
+  .v-data-table > .v-data-table__wrapper > table > thead > tr > td,
+  .v-data-table > .v-data-table__wrapper > table > thead > tr > th,
+  .v-data-table > .v-data-table__wrapper > table > tfoot > tr > td,
+  .v-data-table > .v-data-table__wrapper > table > tfoot > tr > th {
+    padding: 0 5px;
+    transition: height 0.2s cubic-bezier(0.4, 0, 0.6, 1);
+    font-weight: 400;
+  }
+
+  .btn-header {
+    justify-content: space-around;
+    flex-direction: row;
+    display: flex;
+    max-width: 40%;
+    margin-top: 5%;
+    #excel-btn {
+      margin-bottom: 5%;
+      margin-right: auto;
+      font-size: 50%;
+      max-width: 80%;
+      display: flex;
+      flex-direction: row;
+      #excel-icon {
+        display: none;
+      }
+    }
+    #print-btn {
+      font-size: 50%;
+      #print-icon {
+        display: none;
+      }
+    }
+  }
+}
+
+@media print {
+  .tab-header,
+  .main-header,
+  .v-toolbar,
+  .v-input,
+  .v-navigation-drawer,
+  #edit {
+    display: none;
+  }
+  @page {
+    size: A4 landscape;
+  }
+  td.text-xs-center {
+    font-family: Georgia, serif;
+    font-size: 4pt;
+    line-height: 12pt;
+    background: none;
+    color: #000;
+  }
+  .v-main {
+    background-color: rgb(255, 255, 255);
+    border: none;
+    box-shadow: none;
+  }
+  .v-toolbar {
+    margin: 0;
+    padding: 0;
+  }
+  .v-navigation-drawer__content {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.employee-list {
+  .v-card__title {
+    .v-input {
+      max-width: 45%;
+      @include media-breakpoint-up(md) {
+        max-width: 20%;
+      }
+    }
+  }
+
+  .v-data-table {
+    .v-text-field > .v-input__control > .v-input__slot {
+      &:after,
+      &:before {
+        border: none !important;
+      }
+    }
+    .v-data-table__checkbox.v-simple-checkbox {
+      .v-icon.mdi-checkbox-marked {
+        color: $primary;
+      }
+    }
+  }
+}
